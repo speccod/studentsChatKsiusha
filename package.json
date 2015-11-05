@@ -1,0 +1,29 @@
+{
+  "name": "studentsChatKsiusha",
+  "version": "0.0.0",
+  "description": "",
+  "main": "app.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "pretest": "mkdir reports || true",
+    "test": "mocha --reporter xunit > ./reports/xunit.xml || true"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/speccod/studentsChatKsiusha.git"
+  },
+  "author": "speccod/Ksiusha",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/speccod/studentsChatKsiusha/issues"
+  },
+  "dependencies": {
+    "chai": "^3.4.0",
+    "expect.js": "^0.3.1",
+    "express": "^4.13.3",
+    "muon-mockify": "^0.3.1",
+    "should": "^7.1.1"
+  }
+}
