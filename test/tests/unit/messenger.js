@@ -6,4 +6,8 @@ describe("messenger", function() {
 		res._setup('render', 'index', {}, done);
 		messenger.processIndex({}, res);
 	});
+	it("#processGet", function(done) {
+		res._setup('json', 'get', {}, done);
+		messenger.processGet({}, res);
+	});
 });
