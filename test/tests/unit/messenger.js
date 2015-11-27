@@ -7,7 +7,7 @@ describe("messenger", function() {
 		messenger.processIndex({}, res);
 	});
 	it("#processGet", function(done) {
-		res._setup('json', 'get', {}, done);
+		res._setup('json', {}, undefined, done);
 		messenger.processGet({}, res);
 	});
 });
