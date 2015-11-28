@@ -18,4 +18,11 @@ describe("messenger", function() {
 			}
 		}, res);
 	});
+	it('#processPost', function(done) {
+		res._setup('status', 200, undefined, done);
+		messenger.processPost({
+			
+		})
+	
+	})
 });
