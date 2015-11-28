@@ -10,4 +10,12 @@ describe("messenger", function() {
 		res._setup('json', {}, undefined, done);
 		messenger.processGet({}, res);
 	});
+	it("#processGet", function(done) {
+		res._setup('json', {}, undefined, done);
+		messenger.processGet({
+			params: {
+				time: 0
+			}
+		}, res);
+	});
 });
