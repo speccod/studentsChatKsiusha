@@ -19,10 +19,12 @@ describe("messenger", function() {
 		}, res);
 	});
 	it('#processPost', function(done) {
-		res._setup('status', 200, undefined, done);
+		res._setup('res', 200);
 		messenger.processPost({
-			
-		})
+			body: {
+			 msg:'сообщение'
+			}
+		}, res);
 	
 	})
 });
